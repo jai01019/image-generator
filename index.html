@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Search App</h1>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for image">
+        <button id="clear-button" type="button">Clear Search</button>
+    </form>
+
+    <div class="search-results" id="search-results"></div>
+    <button id="load-more-button" type="button" style="display: none;">Load More</button>
+
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+        <button id="download-button">Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
